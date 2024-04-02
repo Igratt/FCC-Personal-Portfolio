@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+.flex {
+    display: flex;
+}
+section {
+    
+}
+.container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#navbar {
+    background-color: #8E93FF;
+    padding: 2em 0;
+    justify-content: center;
+}
+ul {
+    justify-content: space-between;
+}
+#navbar a {
+    color: white;
+    font-size: 18px;
+}
