@@ -10,6 +10,20 @@ li {
 a {
     text-decoration: none;
 }
+h1 {
+    color: white;
+    font-size: 48px;
+}
+h2 {
+    font-size: 30px;
+    color: white;
+}
+#profile h2 {
+    color: #292929;
+}
+h4 {
+    color: white;
+}
 .flex {
     display: flex;
 }
@@ -17,20 +31,57 @@ section {
     
 }
 .container {
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
 }
 
 #navbar {
     background-color: #8E93FF;
-    padding: 2em 0;
+    padding: 1em 0;
     justify-content: center;
+}
+#navbar > * {
+    max-width: 250px;
 }
 ul {
     justify-content: space-between;
 }
 #navbar a {
-    color: white;
     font-size: 18px;
 }
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #292929;
+    height: calc(100vh - 53px);
+}
+#welcome-section p {
+    color: #8E93FF;
+    font-style: italic;
+    font-size: 22px;
+    margin-top: 0.25em;
+}
+
+#projects {
+    background-color: #8E93FF;
+    padding: 2em 0;
+}
+.project-tile {
+    background: #292929;
+    /* why does this not work? try to include actual image, see how it responds */
+}
+
+
+/* ? ---------------------- MEDIA QUERIES -------------------- ? */
+/* @media () {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+} */
+
+/* TODO: Create a root of colors and use them as variables in certain places; color white property transfer to multiple elements (.something, something something {color: white;}) */
