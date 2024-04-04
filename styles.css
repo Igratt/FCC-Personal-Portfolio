@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --purple: #8E93FF;
+    --gray: #292929;
+}
 li {
     list-style: none;
     color: white;
@@ -19,13 +23,24 @@ h2 {
     color: white;
 }
 #profile h2 {
-    color: #292929;
+    color: var(--gray);
 }
 h4 {
     color: white;
+    padding: 0.5em 0;
+}
+img {
+    max-width: 100%;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 .flex {
     display: flex;
+}
+.grid {
+    display: grid;
+    padding: 2em 0;
 }
 section {
     
@@ -37,7 +52,7 @@ section {
 }
 
 #navbar {
-    background-color: #8E93FF;
+    background-color: var(--purple);
     padding: 1em 0;
     justify-content: center;
 }
@@ -49,29 +64,34 @@ ul {
 }
 #navbar a {
     font-size: 18px;
+    color: white;
 }
 
 #welcome-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #292929;
+    background-color: var(--gray);
     height: calc(100vh - 53px);
 }
 #welcome-section p {
-    color: #8E93FF;
+    color: var(--purple);
     font-style: italic;
     font-size: 22px;
     margin-top: 0.25em;
 }
 
 #projects {
-    background-color: #8E93FF;
+    background-color: var(--purple);
     padding: 2em 0;
 }
 .project-tile {
-    background: #292929;
+    display: inline-block;
+    background: var(--gray);
     /* why does this not work? try to include actual image, see how it responds */
+}
+.project-tile + .project-tile {
+    margin-top: 2em;
 }
 
 
