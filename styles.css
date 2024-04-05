@@ -159,4 +159,5 @@ footer {
     }
 } */
 
-/* TODO: Create a root of colors and use them as variables in certain places; color white property transfer to multiple elements (.something, something something {color: white;}) */
+/* TODO: Create a root of colors and use them as variables in certain places; color white property transfer to multiple elements (.something, something something {color: white;})
+TODO: Just optimize the code, make sure a lot of things don't repeat themselves, etc. */
