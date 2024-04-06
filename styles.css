@@ -44,6 +44,8 @@ img {
 }
 .grid {
     display: grid;
+    grid-gap: 3em 0;
+    margin: 1.5em 0;
     padding: 2em 0;
 }
 section {
@@ -93,11 +95,7 @@ ul {
 .project-tile {
     display: inline-block;
     background: var(--gray);
-    margin: 1em 0;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.6);
-}
-.project-tile + .project-tile {
-    margin-top: 2em;
 }
 #projects > .container > a {
     display: block;
@@ -106,7 +104,7 @@ ul {
     box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.3);
     font-size: 1.1em;
     padding: 0.5em 1em;
-    margin: 0.5em auto;
+    margin: 0.75em auto;
     border-radius: 10px;
     color: #292929;
 }
@@ -125,7 +123,7 @@ ul {
 figcaption {
     font-size: 1.1em;
     font-weight: 500;
-
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 .contact-info {
     display: grid;
@@ -151,13 +149,44 @@ footer {
 
 
 /* ? ---------------------- MEDIA QUERIES -------------------- ? */
-/* @media () {
+@media (min-width: 600px) {
     .grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 3em 2em;
+        grid-template-columns: 1fr 1fr;
+        align-items: baseline;
     }
-} */
+    .project-tile {
+        margin: 0;
+    }
+    .contact-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #projects > .container > a {
+        padding: 0.75em 1em;
+        font-size: 1.2em;
+    }
+}
+@media (min-width: 900px) {
+    h1 {
+        font-size: 4em;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    .contact-info {
+        display: inline-block;
+    }
+    .contact-info > a {
+        padding: 1em 2em;
+    }
+}
+@media (min-width: 1200px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
 
+    }
+}
 /* TODO: Create a root of colors and use them as variables in certain places; color white property transfer to multiple elements (.something, something something {color: white;})
 TODO: Just optimize the code, make sure a lot of things don't repeat themselves, etc. */
