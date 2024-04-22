@@ -24,11 +24,11 @@
     padding: 2em 0;
 }
 h1 {
-    font-size: 3em;
+    font-size: 10vmin;
     text-shadow: 1px 1px 2px black;
 }
 h2 {
-    font-size: 2em;
+    font-size: 7vmin;
     text-shadow: 1.5px 1.5px 3px black;
 }
 h4 {
@@ -62,7 +62,7 @@ ul {
     justify-content: space-between;
 }
 #navbar a {
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 #welcome-section {
@@ -75,7 +75,7 @@ ul {
 #welcome-section p {
     margin-top: 0.25em;
     font-style: italic;
-    font-size: 22px;
+    font-size: 3vmin;
     color: var(--purple);
     letter-spacing: 2px;
 }
@@ -90,7 +90,7 @@ ul {
     background: #FFE70C;
     margin: 0.75em auto;
     padding: 0.5em 1em;
-    font-size: 1.1em;
+    font-size: 4vmin;
     color: #292929;
     border-radius: 10px;
     box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.3);
@@ -118,7 +118,7 @@ figure img {
 }
 figcaption {
     color: var(--gray);
-    font-size: 1.1em;
+    font-size: 1.1rem;
     font-weight: 500;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
@@ -164,15 +164,12 @@ li, h1, h2, h4, #navbar a, .contact-link {
     }
     #projects > .container > a {
         padding: 0.75em 1em;
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
 }
 @media (min-width: 900px) {
-    h1 {
-        font-size: 4em;
-    }
     h2 {
-        font-size: 2.5em;
+        font-size: 3rem;
     }
     .contact-info {
         display: inline-block;
@@ -186,5 +183,3 @@ li, h1, h2, h4, #navbar a, .contact-link {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
-/* TODO: Create a root of colors and use them as variables in certain places; color white property transfer to multiple elements (.something, something something {color: white;})
-TODO: Just optimize the code, make sure a lot of things don't repeat themselves, etc. */
